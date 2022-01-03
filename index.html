@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
-
-<body>
-  <div class="header">
-    <h1 class="heading">IP Address Tracker</h1>
-    <div class="search-bar">
-      <input type="text" id="ip-input" /><button class="search-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-        <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
-      </svg></button>
-      
+  <body>
+    <div class="header">
+      <h1 class="heading">IP Address Tracker</h1>
+      <div class="search-bar">
+        <input type="text" id="ip-input" />
+        <button class="search-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="ip-info-container">
-    <div class="ip-address info-box">
-      <p class="info-tag ip-head">IP ADDRESS</p>
-      <h1 class="ip-address">1.1.1.1</h1>
-    </div>
-    <div class="location-container info-box">
-      <p class="info-tag location-head">LOCATION</p>
-      <h1 class="location">Brooklyn, NY, 10001</h1>
-    </div>
-    <div class="timezone-container info-box">
-      <p class="info-tag time-head">TIMEZONE</p>
-      <h1 class="timezone">UTC -05:00</h1>
-    </div>
-    <div class="isp-container info-box">
-      <p class="info-tag isp-head">ISP</p>
-      <h1 class="isp">SpaceX Starlink</h1>
-    </div>
-  </div>
-  <div class="map"></div>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
-<script src="index.js"></script>
+    <div class="ip-info-container">
+      <div class="ip-address info-box">
+        <p class="info-tag ip-head">IP ADDRESS</p>
+        <h1 id="ip-address">103.46.203.79</h1>
+      </div>
+      <div class="location-container info-box">
+        <p class="info-tag location-head">LOCATION</p>
+        <h1 id="location">New Delhi, IN
+        </h1>
+      </div>
+      <div class="timezone-container info-box">
+        <p class="info-tag time-head">TIMEZONE</p>
+        <h1 id="timezone">UTC +05:30
 
+        </h1>
+      </div>
+      <div class="isp-container info-box">
+        <p class="info-tag isp-head">ISP</p>
+        <h1 id="isp">Excitel Broadband Private Limited
+
+        </h1>
+      </div>
+    </div>
+    <div class="map" id="map"></div>
+
+  </body>
+  <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  ></script>
+
+  <script src="index.js" defer></script>
 </html>
