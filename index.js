@@ -22,7 +22,7 @@ let ip = {
 
     popup.setLatLng([lat, lng]).setContent(city + ", " + country);
     marker.setLatLng([lat, lng]);
-    map.setView([lat, lng], 13);
+    map.setView([lat, lng], 12);
   },
 
   search: function () {
