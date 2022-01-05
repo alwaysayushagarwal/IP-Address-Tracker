@@ -124,7 +124,7 @@ position: absolute;
 @media all and (max-width: 770px){
   html{
     font-size: 12px;
-    line-height: 1.5em;
+    line-height: 1.8em;
   }
   .search-bar{
     margin-top: 10% ;
