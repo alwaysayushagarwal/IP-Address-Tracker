@@ -13,7 +13,6 @@ let ip = {
   displayIp: function (data) {
     const { ip, isp } = data;
     const { city, country, lat, lng, timezone, postalCode } = data.location;
-    console.log(ip, isp, city, country, lat, lng, timezone, postalCode);
 
     ipDisplay.innerText = ip;
     locationDisplay.innerText = city + ", " + country + " " + postalCode;

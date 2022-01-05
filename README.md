@@ -23,7 +23,7 @@ Users should be able to:
 
 - See hover states for all interactive elements on the page
 - Search for any IP addresses or domains and see the key information, location, Time Zone and Internet Service Provider.
-
+- Responsive on all Devices.
 ### Screenshot
 
 The screenshot of the website can be seen in the screenshot.png file.
